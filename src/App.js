@@ -1,7 +1,10 @@
 function App() {
   return (
     <div>
-      <h1>It works</h1>
+      <span className="icon is-large">
+        <i className="fas fa-3x fa-rocket"></i>
+      </span>
+      <h1 className="title">It works</h1>
     </div>
   );
 }
