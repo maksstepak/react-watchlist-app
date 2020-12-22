@@ -10,12 +10,12 @@ export const reducer = (state, action) => {
   switch (action.type) {
     case actionTypes.ADD_MOVIE:
       return [
-        ...state,
         {
           id: uuidv4(),
           title: action.title,
           watched: false,
         },
+        ...state,
       ];
     case actionTypes.REMOVE_MOVIE:
       return state.filter((movie) => movie.id !== action.id);

@@ -1,39 +1,23 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NewMovieForm from './components/NewMovieForm';
+import MovieList from './components/MovieList';
 
 function App() {
   return (
     <div className="site">
-      <div className="container is-max-desktop">
-        <Header />
-        <main className="site__content">
-          <section className="section">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              in quam vel arcu imperdiet consequat et a tortor. Proin non
-              euismod dolor. Curabitur risus arcu, ornare et sodales consequat,
-              rutrum non sapien. Aliquam enim sapien, convallis id consectetur
-              vitae, fringilla eget diam. In turpis est, semper in pharetra nec,
-              laoreet ut nibh. Proin vel luctus felis, ac porttitor ex. Aenean
-              maximus vulputate mauris, ut ornare nisi interdum eget. Mauris
-              tristique, augue ac euismod venenatis, lorem nibh consectetur
-              metus, et gravida purus nisl ut erat.
-            </p>
-          </section>
-          <section className="section">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              in quam vel arcu imperdiet consequat et a tortor. Proin non
-              euismod dolor. Curabitur risus arcu, ornare et sodales consequat,
-              rutrum non sapien. Aliquam enim sapien, convallis id consectetur
-              vitae, fringilla eget diam. In turpis est, semper in pharetra nec,
-              laoreet ut nibh. Proin vel luctus felis, ac porttitor ex. Aenean
-              maximus vulputate mauris, ut ornare nisi interdum eget. Mauris
-              tristique, augue ac euismod venenatis, lorem nibh consectetur
-              metus, et gravida purus nisl ut erat.
-            </p>
-          </section>
-        </main>
+      <div className="site__content">
+        <div className="container is-max-desktop">
+          <Header />
+          <main>
+            <section className="p-2">
+              <NewMovieForm />
+            </section>
+            <section className="p-2">
+              <MovieList />
+            </section>
+          </main>
+        </div>
       </div>
       <Footer />
     </div>

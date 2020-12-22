@@ -9,7 +9,7 @@ export const MoviesContextProvider = ({ children }) => {
   const [movies, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <MoviesContext.Provider value={[movies, dispatch]}>
+    <MoviesContext.Provider value={{ movies, dispatch }}>
       {children}
     </MoviesContext.Provider>
   );
