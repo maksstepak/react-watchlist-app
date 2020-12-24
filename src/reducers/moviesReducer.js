@@ -13,6 +13,7 @@ export const reducer = (state, action) => {
         {
           id: uuidv4(),
           title: action.title,
+          type: action.movieType,
           watched: false,
         },
         ...state,

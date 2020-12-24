@@ -12,7 +12,12 @@ const MovieDetails = ({ movie }) => {
           movie.watched ? 'has-background-success' : ''
         }`}
       >
-        <p className="subtitle has-text-centered">{movie.title}</p>
+        <p className="has-text-weight-bold is-size-5">{movie.title}</p>
+        {movie.type === 'movie' ? (
+          <span className="tag is-warning">Movie</span>
+        ) : (
+          <span className="tag is-link">TV Series</span>
+        )}
       </div>
       <footer className="card-footer">
         <div className="card-footer-item">
